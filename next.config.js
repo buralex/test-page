@@ -8,6 +8,7 @@
 // export default nextConfig;
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+  assetPrefix: "/test-page",
   output: "export",
 };
 
