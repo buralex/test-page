@@ -6,10 +6,12 @@
 // };
 
 // export default nextConfig;
+
 /** @type {import('next').NextConfig} */
+
+const isProd = process.env.NODE_ENV === "production";
 const nextConfig = {
-  assetPrefix: "/test-page",
-  basePath: "/test-page",
+  basePath: isProd ? "/test-page" : undefined,
   output: "export",
 };
 
