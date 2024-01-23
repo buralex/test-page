@@ -9,6 +9,7 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   assetPrefix: "/test-page",
+  basePath: "/test-page",
   output: "export",
 };
 
