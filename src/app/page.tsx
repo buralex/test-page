@@ -1,9 +1,9 @@
 "use client";
 import Image from "next/image";
+import Link from "next/link";
 import styles from "./page.module.css";
 import { usePathname } from "next/navigation";
-
-const basePath = "/test-page";
+import { basePath } from "@/constants";
 
 export default function Home() {
   const pathname = usePathname();
@@ -14,6 +14,8 @@ export default function Home() {
     <main className={styles.main}>
       <div className={styles.description}>
         <p>Test 444</p>
+        <Link href="/about">About</Link>
+
         <div>
           <a
             href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
