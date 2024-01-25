@@ -28,7 +28,9 @@ const About = () => {
   const router = useRouter();
   const handleClick = (e: any) => {
     e.preventDefault();
-    router.push(`${basePath}`);
+    console.log("__LOG__.cli");
+
+    router.push(`/${basePath}`);
   };
   return (
     <div>
@@ -38,9 +40,9 @@ const About = () => {
         Go back to the page.
         <br />
         <div>
-          <a href="/" onClick={handleClick}>
+          <p style={{ cursor: "pointer" }} onClick={handleClick}>
             Home push 111
-          </a>
+          </p>
         </div>
         <Link href="/">Home</Link>
         <br />
