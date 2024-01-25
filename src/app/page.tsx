@@ -13,7 +13,7 @@ export default function Home() {
   return (
     <main className={styles.main}>
       <div className={styles.description}>
-        <p>Test 55555555</p>
+        <p>Test 1</p>
         <Link href="/about">About</Link>
 
         <div>
@@ -25,7 +25,7 @@ export default function Home() {
             By{" "}
             <Image
               // src={`${window.location.origin}/vercel.svg`}
-              src={`/${basePath}/vercel.svg`}
+              src={`${basePath}/vercel.svg`}
               alt="Vercel Logo"
               className={styles.vercelLogo}
               width={100}
@@ -39,7 +39,7 @@ export default function Home() {
       <div className={styles.center}>
         <Image
           className={styles.logo}
-          src={`/${basePath}/next.svg`}
+          src={`${basePath}/next.svg`}
           alt="Next.js Logo"
           width={180}
           height={37}

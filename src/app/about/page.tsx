@@ -36,10 +36,8 @@ const About = () => {
   return (
     <div>
       <h1>About</h1>
-      <p>Now you are on the About page!</p>
+
       <p>
-        Go back to the page.
-        <br />
         <div>
           <p style={{ cursor: "pointer" }} onClick={handleClick}>
             Home push 222
