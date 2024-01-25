@@ -43,7 +43,7 @@ const About = () => {
             Home push 222
           </p>
         </div>
-        <Link href="/">Home</Link>
+        <Link href="/home">Home</Link>
         <br />
         <Link href="/test-page">Index</Link>
         <br />
