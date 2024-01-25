@@ -39,7 +39,7 @@ const About = () => {
         <br />
         <div>
           <a href="/" onClick={handleClick}>
-            Home push
+            Home push 111
           </a>
         </div>
         <Link href="/">Home</Link>
