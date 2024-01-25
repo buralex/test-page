@@ -28,7 +28,7 @@ const About = () => {
   const router = useRouter();
   const handleClick = (e: any) => {
     e.preventDefault();
-    console.log("__LOG__.cli");
+    console.log("__LOG__.cli", `/${basePath}`);
 
     router.push(`/${basePath}`);
   };
