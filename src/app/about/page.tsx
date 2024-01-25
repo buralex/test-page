@@ -1,4 +1,5 @@
 "use client";
+import { basePath } from "@/constants";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
 
@@ -27,7 +28,7 @@ const About = () => {
   const router = useRouter();
   const handleClick = (e: any) => {
     e.preventDefault();
-    router.push("/");
+    router.push(`${basePath}`);
   };
   return (
     <div>
