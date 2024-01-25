@@ -43,9 +43,9 @@ const About = () => {
             Home push 222
           </p>
         </div>
-        <Link href="/home">Home</Link>
+        <Link href="/">Home</Link>
         <br />
-        <Link href="/test-page">Index</Link>
+        <Link href="/test-page">test-page</Link>
         <br />
         <Link href="/contact">Contact</Link>
       </p>
