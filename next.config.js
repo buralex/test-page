@@ -3,7 +3,7 @@ const isDevelopment = process.env.NODE_ENV === "development";
 const basePath = isDevelopment ? "" : "/test-page";
 
 const nextConfig = {
-  // basePath,
+  basePath,
   output: "export",
 };
 
