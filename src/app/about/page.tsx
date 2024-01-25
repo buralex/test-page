@@ -30,7 +30,8 @@ const About = () => {
     e.preventDefault();
     console.log("__LOG__.cli", `/${basePath}`);
 
-    router.push(`/${basePath}`);
+    router.push(`/`);
+    // router.push(`/${basePath}`);
   };
   return (
     <div>
@@ -41,7 +42,7 @@ const About = () => {
         <br />
         <div>
           <p style={{ cursor: "pointer" }} onClick={handleClick}>
-            Home push 111
+            Home push 222
           </p>
         </div>
         <Link href="/">Home</Link>
