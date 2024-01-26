@@ -26,28 +26,32 @@ import { useRouter } from "next/navigation";
 
 const About = () => {
   const router = useRouter();
-  const handleClick = (e: any) => {
-    e.preventDefault();
-    console.log("__LOG__.cli", `/${basePath}`);
+  // const handleClick = (e: any) => {
+  //   e.preventDefault();
+  //   console.log("__LOG__.cli", `/${basePath}`);
 
-    router.push(`/`);
-    // router.push(`/${basePath}`);
-  };
+  //   router.push(basePath || `/`);
+  //   // router.push(`/${basePath}`);
+  // };
   return (
     <div>
       <h1>About</h1>
 
       <p>
-        <div>
-          <p style={{ cursor: "pointer" }} onClick={handleClick}>
-            Home push 222
-          </p>
-        </div>
-        <Link href="/">Home page</Link>
+        {/* <i style={{ cursor: "pointer" }} onClick={handleClick}>
+          Home push aaa
+        <i/> */}
+        <Link prefetch={false} href="/">
+          Home page
+        </Link>
+        {/* <br />
+        <Link href={basePath || "/"}>basePath Home page</Link>
         <br />
-        <Link href="/test-page">test-page</Link>
+        <Link href="/test-page">test-page</Link> */}
         <br />
         <Link href="/contact">Contact</Link>
+        <br />
+        {/* <Link href={`${basePath}/contact`}>basePath Contact</Link> */}
       </p>
     </div>
   );
